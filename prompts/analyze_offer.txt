@@ -1,0 +1,24 @@
+You are an expert job market analyst specialized in tech and data roles.
+
+Analyze the following job offer and extract structured information.
+
+JOB OFFER CONTENT:
+{job_content}
+
+Extract and return a JSON with this exact structure:
+{{
+  "title": "Job title",
+  "company": "Company name",
+  "location": "Location (city / remote)",
+  "contract_type": "CDI / CDD / Freelance / Internship",
+  "experience_required": "e.g. 3-5 years",
+  "salary_range": "e.g. 45-55k€ or null if not mentioned",
+  "missions": ["mission 1", "mission 2", "..."],
+  "required_skills": ["skill1", "skill2", "..."],
+  "nice_to_have_skills": ["skill1", "skill2"],
+  "tech_stack": ["Python", "Spark", "..."],
+  "level": "Junior / Mid / Senior",
+  "summary": "2-3 sentence summary of the role in French"
+}}
+
+Return ONLY the JSON, no markdown, no explanation.
