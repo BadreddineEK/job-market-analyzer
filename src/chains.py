@@ -55,6 +55,9 @@ def cv_to_profile_chain(cv_text: str) -> Optional[str]:
     raw = chain.invoke({"cv_text": cv_text[:8000]})  # cap to avoid context overflow
     # Strip potential markdown code fences
     return raw.strip().removeprefix("```yaml").removeprefix("```").removesuffix("```").strip()
+
+
+def gap_analysis_chain(profile: dict, aggregated_skills: list[str]) -> str:
     """Run a skill gap analysis comparing the user profile to market demand."""
     prompt = PromptTemplate.from_template(_get_prompt("gap_analysis.txt"))
     chain = prompt | get_llm(temperature=0.3) | StrOutputParser()
