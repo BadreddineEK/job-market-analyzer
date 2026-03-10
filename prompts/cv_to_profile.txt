@@ -1,0 +1,58 @@
+You are an expert HR assistant and career coach specialized in tech profiles.
+
+Extract the professional profile from the following CV text and return it as a YAML document.
+
+CV TEXT:
+{cv_text}
+
+Return ONLY a valid YAML document following this exact structure (no markdown, no explanation):
+
+name: "Full Name"
+current_role: "Current or most recent job title"
+experience_years: 0  # integer, total years of professional experience
+target_role: "Desired role based on trajectory (e.g. Senior Data Scientist / ML Engineer)"
+
+skills:
+  languages:
+    - Python
+    # list programming languages found in the CV
+  data_science:
+    - Pandas
+    # list data science / ML / stats tools and frameworks
+  llm_ai:
+    - LangChain
+    # list LLM, AI, NLP related skills if present
+  data_engineering:
+    - SQL
+    # list data engineering tools (ETL, databases, pipelines)
+  web:
+    - FastAPI
+    # list web frameworks and tools
+  cloud:
+    - AWS
+    # list cloud platforms, DevOps, and version control tools
+
+job_preferences:
+  roles:
+    - Data Scientist
+    # list 3-5 relevant roles based on the CV
+  locations:
+    - Remote
+    # list locations mentioned or leave Remote if none
+  contract_types:
+    - CDI
+    # CDI, CDD, Freelance, Internship based on context
+  min_salary: 0   # estimate based on experience, or 0 if unknown
+  max_salary: 0   # estimate based on experience, or 0 if unknown
+
+learning_goals:
+  - ""
+  # list technologies mentioned as "learning" or logical next steps for this profile
+
+Rules:
+- Use the exact YAML keys above
+- All lists must have at least one item (use empty string if truly unknown)
+- experience_years must be an integer
+- Infer target_role from the CV trajectory if not explicitly stated
+- Deduplicate skills across categories
+- Respond in the same language as the CV for name/role fields, but keep YAML keys in English
