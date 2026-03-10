@@ -1,25 +1,25 @@
 # Core
-langchain==0.3.20
-langchain-groq==0.2.4
-langchain-community==0.3.20
+langchain>=0.3.21
+langchain-groq>=0.2.4
+langchain-community>=0.3.21
 
 # UI
-streamlit==1.43.0
+streamlit>=1.43.0
 
 # Scraping
-beautifulsoup4==4.12.3
-requests==2.32.3
-html2text==2024.2.26
+beautifulsoup4>=4.12.3
+requests>=2.32.3
+html2text>=2024.2.26
 
 # Data
-pandas==2.2.3
-pydantic==2.10.6
-python-dotenv==1.0.1
-pyyaml==6.0.2
+pandas>=2.2.3
+pydantic>=2.10.6
+python-dotenv>=1.0.1
+pyyaml>=6.0.2
 
 # Vector store (optional RAG)
-chromadb==0.6.3
-langchain-chroma==0.2.2
+chromadb>=0.6.3
+langchain-chroma>=0.2.2
 
 # Export
-openpyxl==3.1.5
+openpyxl>=3.1.5
