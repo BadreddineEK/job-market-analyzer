@@ -10,6 +10,11 @@ streamlit>=1.43.0
 beautifulsoup4>=4.12.3
 requests>=2.32.3
 html2text>=2024.2.26
+# Job search (python-jobspy + its deps, installed --no-deps on Python 3.13)
+python-jobspy>=1.1.80
+tls-client>=1.0.1
+markdownify>=0.12
+regex
 
 # Data
 pandas>=2.2.3

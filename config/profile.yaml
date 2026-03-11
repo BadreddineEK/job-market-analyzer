@@ -1,65 +1,22 @@
-# ============================================================
-# YOUR PROFESSIONAL PROFILE
-# Edit this file to personalize the skill gap analysis
-# ============================================================
+name: "Amine Elafifi"
+current_role: "Etudiant technicien d'usinage"
+experience_years: 1
+target_role: "Technicien d'usinage"
 
-name: "Badreddine EL KHAMLICHI"
-current_role: "Data Scientist"
-experience_years: 2
-target_role: "Senior Data Scientist / ML Engineer"
-
-# Your current skills — be honest, this drives the gap analysis
-skills:
-  languages:
-    - Python
-    - SQL
-    - JavaScript
-    - TypeScript
-  data_science:
-    - Pandas
-    - Scikit-learn
-    - Machine Learning
-    - Statistics
-    - Data Visualization
-  llm_ai:
-    - LangChain
-    - LLM APIs
-    - RAG
-    - Prompt Engineering
-  data_engineering:
-    - Snowflake
-    - SQLite
-    - ETL pipelines
-  web:
-    - Streamlit
-    - Next.js
-    - FastAPI
-  cloud:
-    - Streamlit Cloud
-    - Vercel
-    - Git / GitHub
-
-# What you're targeting
 job_preferences:
-  roles:
-    - Data Scientist
-    - ML Engineer
-    - Data Engineer
-    - AI Engineer
-  locations:
-    - Lyon
-    - Paris
-    - Remote
-  contract_types:
-    - CDI
-    - Freelance
-  min_salary: 45000
-  max_salary: 70000
+  roles: 
 
-# What you want to learn (used in recommendations)
-learning_goals:
-  - LangGraph
-  - dbt
-  - Kubernetes
-  - MLflow
-  - Spark
+  locations: 
+    - Lyon
+    - France
+    - Nantes
+    - Saint Nazaire
+  contract_types: 
+    - Stage
+    - Intérim
+    - CDI
+  min_salary: 0
+  max_salary: 60000
+
+learning_goals: 
+  

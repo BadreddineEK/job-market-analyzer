@@ -1,0 +1,25 @@
+Tu es un expert en recrutement spécialisé dans les métiers tech et data.
+
+Rédige une lettre de motivation personnalisée et convaincante pour ce candidat.
+
+PROFIL DU CANDIDAT (JSON) :
+{profile}
+
+OFFRE D'EMPLOI :
+- Poste : {title}
+- Entreprise : {company}
+- Localisation : {location}
+- Missions : {missions}
+- Compétences requises : {required_skills}
+- Stack technique : {tech_stack}
+- Résumé de l'offre : {summary}
+
+RÈGLES DE RÉDACTION :
+- Structure : 3 paragraphes (accroche percutante → valeur ajoutée concrète → conclusion avec call-to-action)
+- Ton : professionnel mais authentique, direct, pas robotique ni générique
+- Croiser précisément les compétences et expériences du candidat avec les besoins de l'offre
+- Mettre en avant les 2-3 points forts les plus pertinents pour CE poste spécifique
+- Ne jamais commencer par "Je me permets de vous contacter" ou "Suite à votre annonce"
+- Ne jamais inventer de faits absents du profil
+- Rédiger en français
+- Longueur : 250-350 mots maximum

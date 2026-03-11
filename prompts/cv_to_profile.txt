@@ -1,58 +1,37 @@
-You are an expert HR assistant and career coach specialized in tech profiles.
+You are a career assistant. Extract the professional profile from the CV text below and return it as valid YAML.
 
-Extract the professional profile from the following CV text and return it as a YAML document.
+STRICT RULES:
+- Return ONLY the YAML document. No markdown fences. No explanations. No comments.
+- Fill every field with actual data extracted from the CV. Never reuse the placeholder values shown in the format below.
+- For skill categories with nothing found, use an empty list: []
+- experience_years must be an integer (total years of professional experience)
+- Infer target_role from career trajectory if not explicitly stated
+- Distribute skills into the most appropriate category — do not duplicate across categories
+- Respond in the same language as the CV for name and role fields
 
 CV TEXT:
 {cv_text}
 
-Return ONLY a valid YAML document following this exact structure (no markdown, no explanation):
+OUTPUT FORMAT — replace all placeholder values with real data from the CV:
 
 name: "Full Name"
 current_role: "Current or most recent job title"
-experience_years: 0  # integer, total years of professional experience
-target_role: "Desired role based on trajectory (e.g. Senior Data Scientist / ML Engineer)"
+experience_years: 0
+target_role: "Target job title"
 
 skills:
-  languages:
-    - Python
-    # list programming languages found in the CV
-  data_science:
-    - Pandas
-    # list data science / ML / stats tools and frameworks
-  llm_ai:
-    - LangChain
-    # list LLM, AI, NLP related skills if present
-  data_engineering:
-    - SQL
-    # list data engineering tools (ETL, databases, pipelines)
-  web:
-    - FastAPI
-    # list web frameworks and tools
-  cloud:
-    - AWS
-    # list cloud platforms, DevOps, and version control tools
+  languages: []
+  data_science: []
+  llm_ai: []
+  data_engineering: []
+  web: []
+  cloud: []
 
 job_preferences:
-  roles:
-    - Data Scientist
-    # list 3-5 relevant roles based on the CV
-  locations:
-    - Remote
-    # list locations mentioned or leave Remote if none
-  contract_types:
-    - CDI
-    # CDI, CDD, Freelance, Internship based on context
-  min_salary: 0   # estimate based on experience, or 0 if unknown
-  max_salary: 0   # estimate based on experience, or 0 if unknown
+  roles: []
+  locations: []
+  contract_types: []
+  min_salary: 0
+  max_salary: 0
 
-learning_goals:
-  - ""
-  # list technologies mentioned as "learning" or logical next steps for this profile
-
-Rules:
-- Use the exact YAML keys above
-- All lists must have at least one item (use empty string if truly unknown)
-- experience_years must be an integer
-- Infer target_role from the CV trajectory if not explicitly stated
-- Deduplicate skills across categories
-- Respond in the same language as the CV for name/role fields, but keep YAML keys in English
+learning_goals: []

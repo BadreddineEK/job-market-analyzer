@@ -14,8 +14,8 @@ def offers_to_dataframe(offers: list[dict]) -> pd.DataFrame:
                 "Niveau": o.get("level", "N/A"),
                 "Salaire": o.get("salary_range", "N/A"),
                 "Expérience": o.get("experience_required", "N/A"),
-                "Stack": ", ".join(o.get("tech_stack", [])),
-                "Compétences": ", ".join(o.get("required_skills", [])),
+                "Stack": ", ".join(s for s in (o.get("tech_stack") or []) if s),
+                "Compétences": ", ".join(s for s in (o.get("required_skills") or []) if s),
                 "URL": o.get("url", ""),
             })
     return pd.DataFrame(rows)
